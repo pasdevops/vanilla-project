@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+    <!-- Axios allows you to talk to API -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="weather.js"></script>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<!-- type="module" is an attribute that can be added to a <script> tag in an HTML file to indicate that the script file being loaded contains JavaScript code that uses the ES6 module syntax. -->
+<!-- Always have one entry js file on html -->
+<!-- You can import as many as index file to js file for DOM manipulation e.g. "root" -->
+
+</head>
+<body>
+<div class="card">
+    <div class="search">
+        <input type="text" placeholder="enter city name"
+        spellcheck="false">
+        <button><img src="./images/search.png"></button>
+    </div>
+    <div class="error">
+        <p>Invalid city name</p>
+    </div>
+<div class="weather">
+    <img src="./images/rain.png" class="weather-icon">
+    <h1 class="temp">22°C</h1>
+    <h2 class="city">New York</h2>
+    <h1 class="pressure">CI</h1>
+    <p>Weather Pressure</p>
+
+    <div class="details">
+        <div class="col"></div>
+        <img src="./images/humidity.png">
+        <div>
+            <p class="humidity">50%</p>
+             <p>Humidity</p>
+        </div>
+    </div>
+    <div class="col"></div>
+        <img src="./images/wind.png">
+        <div>
+            <p class="wind">15kmp</p>
+             <p>Wind Speed</p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
+ 
