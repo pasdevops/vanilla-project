@@ -7,6 +7,17 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon"); 
 
+
+// Map over an array to generate HTML
+// const numbers = [1, 2, 3, 4, 5]; 
+// const example = document.querySelector(".example");
+// const newHtml = numbers.map((number) => {
+//   return `<li>${number}</li>`
+// });
+
+// example.innerHTML = newHtml.join("");
+
+
 // Creating a function using AXIOS to make API third party website. 
 async function checkWeather(city) {
   const response = await axios.get(
