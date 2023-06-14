@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: linear-gradient(180deg, rgb(230, 0, 255), yellow);
+    background-color: #93d3c9;
     color: white;
     font-family: "Poppins", sans-sarif;
     min-height: 100vh;
@@ -12,7 +12,7 @@ body {
 .card {
     width: 90%;
     max-width: 470px;
-    background: conic-gradient(yellow, green, blue, black);
+    background: conic-gradient(red, blue, red);;
     color: #fff;
     margin: 100px auto 0;
     border-radius: 20px;
