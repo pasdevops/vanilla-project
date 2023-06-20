@@ -14,17 +14,16 @@ async function checkWeather(city) {
     const cord = await axios.get(
       `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=e945bb4b32f31db4a881497123459508`
     );
-    console.log(cord.data[0].lat);
-    console.log(cord.data[0].lon);
 
-    const lon = cord.data[0].lon;
-    const lat = cord.data[0].lat;
+    // console.log(cord.data[0].lat);
+    // console.log(cord.data[0].lon);
 
+    // const lon = cord.data[0].lon;
+    // const lat = cord.data[0].lat;
 
-
-    const response = await axios.get(
-      `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=e945bb4b32f31db4a881497123459508`
-    );
+    // const response = await axios.get(
+    //   `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=e945bb4b32f31db4a881497123459508`
+    // );
 
     const { main, weather, wind, name, country } = response.data;
 
